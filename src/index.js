@@ -24,8 +24,6 @@ function App(props) {
       <color attach="background" args={['#000']} />
       <Suspense fallback={<Loader />}>
         {scene === 1 && <Scene1 />}
-        {scene === 2 && <Scene2 />}
-        {scene === 3 && <Scene3 />}
       </Suspense>
       <ambientLight intensity={0.4} />
     </Canvas>
